@@ -24,7 +24,15 @@ let g:vim_monokai_tasty_highlight_active_window = 1	" Make the active window sta
 
 " ----------> Basic Usability Enhancements <----------
 :set number						" Show line numbers
-:set relativenumber					" Show realtive numbers
+:set relativenumber					" Show relative numbers
+
+
+" ----------> Basic Usability Enhancements <----------
+:set spell						" Show Spelling
+:highlight clear SpellCap				" Remove unnecessary highlighting for potentially incorrectly capitalized words
+
+" ----------> Basic Editing <----------
+:set backspace=indent,eol,start				" Backspacing over auto-indentation, over end of lines (go back to the previous line), and start of an insert
 
 
 " ----------> Wrapping <----------
@@ -33,7 +41,6 @@ let g:vim_monokai_tasty_highlight_active_window = 1	" Make the active window sta
 :set breakindent 					" Enables indentation to the start of the line for wrapped words
 :set breakindentopt=shift:2 				" Add extra shift for the wrapped line
 :set showbreak=> 					" Displays >  at the start of wrapped lines to indicate a continuation
-:set wrapmargin=2 					" Wraps text 2 characters before the right edge of the window
 
 
 " ----------> Display and Aesthetic Settings <----------
@@ -49,7 +56,7 @@ syntax on						" Enable syntax highlighting
 :set ruler						" Show the cursor position in the status line
 
 
-" ----------> HotKey Configurations <----------
+" ----------> Hotkey Configurations <----------
 " Easier Split Navigation
 :nnoremap <C-h> <C-w>h	 				" Quickly move to the left split.
 :nnoremap <C-j> <C-w>j 					" Quickly move to the split below.
