@@ -1,0 +1,77 @@
+Helpful Commands for Vim
+**********************************************************************************************************
+*******************************************    Motion    *************************************************
+**********************************************************************************************************
+
+
+``			In file			Jump to last place where the cursor was in the file, think Portal
+
+`.			In file			Jump to last edited line / last place where I made an edit
+
+:e #			In file			Close current file, and open the previously opened file in the same location where the cursor was.
+
+
+
+**********************************************************************************************************
+*******************************************     Tabs     *************************************************
+**********************************************************************************************************
+
+
+:tabnew filename	In file			Open a new tab for a file
+
+
+**********************************************************************************************************
+*******************************************    Splits    *************************************************
+**********************************************************************************************************
+
+
+:split filename		In file			Horizontal split (splits the window into top and bottom)
+:sp
+
+:vsplit filename	In file			Vertical split (splits the window into left and right)
+:vsp
+
+:only			In split screen		Close all other splits except the current one
+
+
+			----------> Navigating Between Splits <----------
+
+ctrl + w k		In split screen 	Move to the split above
+ctrl + k
+
+ctrl + w j		In split screen 	Move to the split below
+ctrl + j
+
+ctrl + w h		In split screen 	Move to the split on the left
+ctrl + h
+
+ctrl + w l		In split screen 	Move to the split on the right
+ctrl + l
+
+
+			----------> Resizing Splits <----------
+
+ctrl + w = 		In split screen 	Make all splits equal in size
+ctrl + w +		In split screen		Increase split height
+ctrl + w -		In split screen		Decrease split height
+ctrl + w >		In split screen		Increase split width
+ctrl + w <		In split screen		Decrease split width
+
+:resize 10 		In split screen 	Set specific height
+:vertical resize 30	In split screen 	Set specific width
+
+
+
+**********************************************************************************************************
+******************************************    Spelling    ************************************************
+**********************************************************************************************************
+	
+
+]s			Anywhere		Jump to next misspelled word
+[s			Anywhere		Jump to prev misspelled word
+
+z=			On Misspelled Word	Show list of suggestions. 
+						Enter number of the suggestion to replace the word
+
+zg			On Misspelled Word	Add a word to my dictionary
+
