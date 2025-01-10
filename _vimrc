@@ -63,3 +63,12 @@ syntax on						" Enable syntax highlighting
 :nnoremap <C-k> <C-w>k 					" Quickly move to the split above.
 :nnoremap <C-l> <C-w>l 					" Quickly move to the right split.
 
+
+" ----------> Abbreviations <----------
+iabbrev tree_branch ├──
+iabbrev tree_end └──
+iabbrev tree_pipe │
+iabbrev table_pipe │
+iabbrev table_top ┌───────────┬───────────┬───────────┐
+iabbrev table_mid ├───────────┼───────────┼───────────┤
+iabbrev table_bot └───────────┴───────────┴───────────┘
