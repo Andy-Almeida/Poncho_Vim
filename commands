@@ -11,6 +11,75 @@ Helpful Commands for Vim
 :e #			In file			Close current file, and open the previously opened file in the same location where the cursor was.
 
 
+			----------> Line-By-Line Movement <----------
+
+j			Command Mode		Move down one line.
+
+k			Command Mode		Move up one line.
+
+5k			Command Mode		Move up 5 lines.
+
+5j			Command Mode		Move down 5 lines.
+
+			----------> Screen Movement <----------
+
+Ctrl-d			Command Mode		Move down half a screen.
+
+Ctrl-u			Command Mode		Move up half a screen.
+
+Ctrl-f			Command Mode		Move down a full screen (forward).
+
+Ctrl-b			Command Mode		Move up a full screen (backward).
+
+			----------> Paragraph Movement <----------
+
+{			Command Mode		Move to the beginning of the previous paragraph.
+
+}			Command Mode		Move to the beginning of the next paragraph
+
+
+			----------> Page Movement <----------
+
+H			Command Mode		Move to the top of the screen (High)
+
+M			Command Mode		Move to the middle of the screen (Middle)
+
+L			Command Mode		Move to the bottom of the screen (Low)
+
+
+			----------> Page Scroll <----------
+
+zz			Command Mode		Center the current line in the middle of the screen
+
+zt			Command Mode		Scroll so the current line is at the top of the screen
+
+zb			Command Mode		Scroll so the current line is at the bottom of the screen
+
+			----------> Basic Search <----------
+
+/search			Command Mode		Search for the word
+
+?search			Command Mode		Searches backwards for the word
+
+n			Command Mode		Jump to the next match
+
+N			Command Mode		Jump to the previous match
+
+
+**********************************************************************************************************
+*****************************************     Editing     ************************************************
+**********************************************************************************************************
+
+
+cw			Command Mode		Change Word, Changes the rest of the word starting from the character the cursor is on.
+
+2cw			Command Mode		Change Word, Changes the next 2 words starting from the character the cursor is on.
+
+.			Command Mode		Repeat the last editing command
+
+x			Command Mode		Delete a character under the cursor
+
+X			Command Mode		Delete a character before the cursor
 
 **********************************************************************************************************
 *******************************************     Tabs     *************************************************
@@ -18,6 +87,15 @@ Helpful Commands for Vim
 
 
 :tabnew filename	In file			Open a new tab for a file
+
+gt			Command Mode		Move forward one tab
+
+gT			Command Mode		Move backwards one tab
+
+ngt			Command Mode		Move to tab[n]
+
+ngT			Command Mode 		Move backwards n tabs
+
 
 
 **********************************************************************************************************
@@ -63,6 +141,21 @@ ctrl + w <		In split screen		Decrease split width
 
 
 **********************************************************************************************************
+******************************************    Terminal    ************************************************
+**********************************************************************************************************
+
+
+:terminal powershell	Command Mode		Opens a Terminal in the window
+
+:split | terminal	Command Mode		Horizontal Split Terminal
+
+:vsplit | terminal	Command Mode		Vertical Split Terminal
+	
+:tabnew | terminal	Command Mode		Create a new tab as a Terminal
+
+
+
+**********************************************************************************************************
 ******************************************    Spelling    ************************************************
 **********************************************************************************************************
 	
@@ -75,3 +168,36 @@ z=			On Misspelled Word	Show list of suggestions.
 
 zg			On Misspelled Word	Add a word to my dictionary
 
+
+**********************************************************************************************************
+***************************************    File Explorer    **********************************************
+**********************************************************************************************************
+	
+
+:Ex			Command Mode		Open File Explorer
+
+:Ex /path/to/directory	Command Mode		Open File Explorer
+
+:Sex			Command Mode		Horizontal Split Explorer
+
+:Vex			Command Mode		Vertical Split Explorer
+
+ j/k			File Explorer		Up and down
+
+Enter			File Explorer		Enter a directory/file
+
+-			File Explorer 		Go Up a Directory
+
+
+**********************************************************************************************************
+***************************************    Abbreviations    **********************************************
+**********************************************************************************************************
+
+
+tree_branch 		Insert + [Space]	├──
+tree_end 		Insert + [Space]	└──
+tree_pipe 		Insert + [Space]	│
+table_pipe 		Insert + [Space]	│
+table_top 		Insert + [Space]	┌───────────┬───────────┬───────────┐
+table_mid 		Insert + [Space]	├───────────┼───────────┼───────────┤
+table_bot 		Insert + [Space]	└───────────┴───────────┴───────────┘
