@@ -65,6 +65,10 @@ n			Command Mode		Jump to the next match
 
 N			Command Mode		Jump to the previous match
 
+/search\b		Command Mode		Set an ending boundary for the search
+
+/\bsearch\b		Command Mode		Set search for only search and nothing else around it
+
 
 **********************************************************************************************************
 *****************************************     Editing     ************************************************
@@ -77,7 +81,6 @@ cw			Command Mode		Change Word, Changes the rest of the word starting from the c
 
 .			Command Mode		Repeat the last editing command
 
-x			Command Mode		Delete a character under the cursor
 
 X			Command Mode		Delete a character before the cursor
 
@@ -188,6 +191,8 @@ Enter			File Explorer		Enter a directory/file
 
 -			File Explorer 		Go Up a Directory
 
+%			File Explorer		Create a file and name it (include the extension) and begin editing it
+
 
 **********************************************************************************************************
 ***************************************    Abbreviations    **********************************************
@@ -201,3 +206,11 @@ table_pipe 		Insert + [Space]	│
 table_top 		Insert + [Space]	┌───────────┬───────────┬───────────┐
 table_mid 		Insert + [Space]	├───────────┼───────────┼───────────┤
 table_bot 		Insert + [Space]	└───────────┴───────────┴───────────┘
+
+**********************************************************************************************************
+***************************************    VSVim Hotkeys    **********************************************
+**********************************************************************************************************
+
+<C-w><C-q>		Command Mode		Close a window in vim, C-w is to start a window related command, C-q is to close the window
+
+
