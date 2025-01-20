@@ -7,29 +7,30 @@
 " windows: C:/Users/vimfiles/bundle
 " command (powershell): git clone https://github.com/patstockwell/vim-monokai-tasty.git ~/.vimfiles/bundle/vim-monokai-tasty
 
-call plug#begin()					" Call in Plugins for Vim using Plug
-Plug 'patstockwell/vim-monokai-tasty'			" List of Plugins - shorthand for github.com/.../...
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'elzr/vim-json'
-Plug 'styled-components/vim-styled-components'
-Plug 'itchyny/lightline.vim'
-Plug 'vim-airline/vim-airline'
-call plug#end()
-
-let g:vim_monokai_tasty_italic = 1 			" Italics
-let g:vim_monokai_tasty_highlight_active_window = 1	" Make the active window stand out
-:colorscheme vim-monokai-tasty				" Set the colorscheme to the proper theme
+" call plug#begin()					" Call in Plugins for Vim using Plug
+" Plug 'patstockwell/vim-monokai-tasty'			" List of Plugins - shorthand for github.com/.../...
+" Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'pangloss/vim-javascript'
+" Plug 'MaxMEllon/vim-jsx-pretty'
+" Plug 'elzr/vim-json'
+" Plug 'styled-components/vim-styled-components'
+" Plug 'itchyny/lightline.vim'
+" Plug 'vim-airline/vim-airline'
+" call plug#end()
+" 
+" let g:vim_monokai_tasty_italic = 1 			" Italics
+" let g:vim_monokai_tasty_highlight_active_window = 1	" Make the active window stand out
+" :colorscheme vim-monokai-tasty				" Set the colorscheme to the proper theme
 
 " ----------> Basic Usability Enhancements <----------
 :set number						" Show line numbers
 :set relativenumber					" Show relative numbers
+:set tabstop=4
 
-
-" ----------> Basic Usability Enhancements <----------
+" ----------> Basic Syntax Enhancements <----------
 :set spell						" Show Spelling
 :highlight clear SpellCap				" Remove unnecessary highlighting for potentially incorrectly capitalized words
+:set hlsearch						" Highlight searched elements
 
 " ----------> Basic Editing <----------
 :set backspace=indent,eol,start				" Backspacing over auto-indentation, over end of lines (go back to the previous line), and start of an insert
@@ -63,6 +64,7 @@ syntax on						" Enable syntax highlighting
 :nnoremap <C-k> <C-w>k 					" Quickly move to the split above.
 :nnoremap <C-l> <C-w>l 					" Quickly move to the right split.
 
+:nnoremap <Leader>yw viw"*y				" \yw   Grab whole word and yank it to clipboard 
 
 " ----------> Abbreviations <----------
 iabbrev tree_branch ├──
