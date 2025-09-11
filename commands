@@ -99,6 +99,8 @@ ngt			Command Mode		Move to tab[n]
 
 ngT			Command Mode 		Move backwards n tabs
 
+:tablast 	Command Mode		Jump to the last tab used (q ;D)
+
 
 
 **********************************************************************************************************
@@ -212,5 +214,21 @@ table_bot 		Insert + [Space]	└───────────┴────
 **********************************************************************************************************
 
 <C-w><C-q>		Command Mode		Close a window in vim, C-w is to start a window related command, C-q is to close the window
+
+**********************************************************************************************************
+*********************************    VS Code Movement Hotkeys    *****************************************
+**********************************************************************************************************
+
+F2			File Explorer		Rename
+
+F12			Any			Ctrl Clicking into something
+
+Shift + F10		Any			Open the Right click Menu
+
+Ctrl+ Shift + P		Any			Open the Explorer at the top for settings ex Reload window
+
+
+
+
 
 
