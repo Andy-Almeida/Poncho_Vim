@@ -1,3 +1,4 @@
+echo off
 echo Running Git Add, Commit, and Push
 git add .
 git commit -m "[UPDATE] %*"
